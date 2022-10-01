@@ -1,0 +1,101 @@
+/*********** Page Layout ***********/
+#container { margin: 0 auto; position: relative; width: 960px; }
+
+/*********** Mast Head ***********/
+#mast { font-family: helvetica; height: 106px; }
+
+#logo { position: absolute; background-image: url(/images/logo.png); width: 264px; height: 72px; top: 53px; }
+
+div#logo a { display: block; height: 100%; width: 100%; }
+
+div#logo a span { margin-left: -9999px; }
+
+/*********** Navigation ***********/
+div#navigation
+{
+	display: inline;
+	position: absolute;
+	overflow: hidden;
+	right: 0px;
+	top: 65px;
+}
+
+#navigation ul { float: left; list-style-type: none; background-color: #b4130a; }
+
+#navigation li.home { border-left: 0; }
+
+#navigation li { float: left; height: 40px; line-height: 45px; border-left: 1px solid #ffffff; }
+
+#navigation li a
+{
+	display: block;
+	color: white;
+	padding-right: 20px;
+	padding-left: 4px;
+	padding-top: 10px;	
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 100%;
+	text-align: left;
+}
+
+#navigation li a:hover { background-color: #908a8a; }
+
+/*********** Content ***********/
+
+#page-content { margin-top: 40px; margin-left: 40px; font-family: Arial,sans-serif; line-height: 1.5em; }
+
+strong.chicklet { 
+	background-color: #b4130a; 
+/*	border: solid 1px black; */
+	color: white; 
+	font-size: .8em; 
+	text-transform: uppercase; 
+	padding: 6px 3px 3px 3px;
+	font-family: helvetica; 
+	font-weight: bold; 
+}
+
+h3 { color: #aaa; font-size: 1.5em; font-family: helvetica; font-weight: bold; text-transform: lowercase;}
+
+div.post { margin-top: 20px;}
+
+p.info span.date { color: #aaa; }
+p.info span.at { font-size: 130%; position: relative; top: 1px; }
+
+#page-content h1 { font-size: 2.75em; margin-top: 15px; margin-bottom: 15px; color: #333; font-weight: bold; font-family: Helvetica;}
+
+div.event-meta { font-size: .75em; color: #888; margin-bottom: 50px; border-top: solid thin black; padding-top: 5px; }
+div.event-meta em { color: #444; font-weight: bold;}
+div.event-meta div.presenting { float: left; }
+div.event-meta div.date { float: right; top: 0; left: 20px; }
+
+div.post-content { margin-top: 20px; }
+div.post-meta { font-size: .75em; color: #888;}
+div.post-meta em { color: #444; font-weight: bold;}
+div.post-content p { padding-top: 1em; padding-bottom: 1em;}
+
+div#ruby-scene { margin-top: 40px;}
+
+div#map { margin-top: 40px; text-align: center;}
+div#map_div { border: solid 1px black;}
+
+#location h1 { font-size: 2.25em; }
+#location div#address { text-indent: 40px; }
+
+/*********** Comment Form **********/
+
+/* this is the honeypot captcha to catch spam bots */
+div#comment-something { position: absolute; left: -999px; }
+
+div.comment-form{}
+div.comment-form p label{margin-right:5px;}
+div.comment-form p input{font-size:.75em;margin-right:15px;}
+div.comment-form p textarea{width:417px;}
+
+/*********** Links ***********/
+a, a:link, a:visited, a:active { color: #900; font-family: helvetica;  }
+a:hover { color: #908a8a; }
+
+/*********** Footer ***********/
+div#footer { margin-top: 40px; }
